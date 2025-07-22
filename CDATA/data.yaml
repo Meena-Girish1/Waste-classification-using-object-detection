@@ -1,0 +1,13 @@
+train: C:\Users\Meena Girish\Desktop\CDATA\train\images
+val: C:\Users\Meena Girish\Desktop\CDATA\valid\images
+test: C:\Users\Meena Girish\Desktop\CDATA\test\images
+
+nc: 10
+names: ['Blister_Packs - Non Recyclable', 'Charger - Recyclable', 'Earbud - Non Recyclable', 'ID_Card - Non Recyclable', 'Mobile - Recyclable', 'Paper - Recyclable', 'Paper_Bag - Recyclable', 'Pen - Non Recyclable', 'Plastic - Recyclable', 'Tooth_Brush - Non Recyclable']
+
+roboflow:
+  workspace: waste-management-and-object-detection
+  project: obj-det-9nwz4
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/waste-management-and-object-detection/obj-det-9nwz4/dataset/3

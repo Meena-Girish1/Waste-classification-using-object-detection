@@ -1,0 +1,213 @@
+<!DOCTYPE html> 
+<!-- 
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this 
+license 
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template --> 
+ 
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Waste Segregation System</title>
+        <style>
+        body{ 
+            background-image: url("https://www.angor.co.za/wp-content/uploads/2023/12/213156275_l_normal_none-Large.jpg"); 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-size: 100%;    
+            font-family: italic ; 
+            margin: 0; 
+            padding: 0; 
+            } 
+            .navbar{ 
+            background-color: #123c07; 
+            color: white; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 20px; 
+            } 
+            .navbar .logo{ 
+            font-size: 1.5em; 
+            font-weight: bold; 
+            } 
+            .navbar ul{ 
+            list-style: none; 
+            display: flex; 
+            margin: 0; 
+            padding: 0; 
+            } 
+            .navbar ul li{ 
+            margin-left: 20px; 
+            } 
+            .navbar ul li a{ 
+            text-decoration: none; 
+            color: white; 
+            font-size: 1em; 
+            padding: 5px 10px; 
+            border-radius: 5px; 
+            transition: background 0.3s ease; 
+            } 
+            .navbar ul li a:hover{ 
+            background-color: #34495e; 
+            } 
+            .main-content{ 
+            padding: 50px; 
+            text-align: center; 
+            } 
+            .main-content h1{ 
+            font-size: 5em; 
+            margin-bottom: 30px; 
+            color:white; 
+            } 
+            .camera-button{ 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 10px 20px; 
+            background-color: white; 
+            color: #2c3e50; 
+            font-size: 1em; 
+            font-weight: bold; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background 0.3s ease; 
+            } 
+            .camera-button img{ 
+            width: 30px; 
+            height: 30px; 
+            margin-right: 20px; 
+            } 
+            .camera-button:hover{ 
+            background-color: #dcdcdc; 
+            } 
+            footer { 
+            background-color: #123c07; 
+            color: white; 
+            text-align: center; 
+            padding: 10px; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%; 
+            }
+        </style>
+    </head> 
+    <body> 
+         
+        <header> 
+            <nav class="navbar"> 
+                <div class="logo">Waste Segregation</div> 
+                <ul> 
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="contact.html">Contact</a></li> 
+                </ul> 
+            </nav> 
+        </header> 
+        <main> 
+                 
+            <section class="main-content"> 
+                <h1>WASTE SEGREGATION SYSTEM</h1> 
+                <button class="camera-button" onclick="openCamera()"> 
+                    <img 
+src="data:image/png;base64,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" 
+alt="Camera Icon">Open Camera 
+                </button> 
+            </section> 
+        </main> 
+        <footer> 
+            <p>&copy; 2025 Waste Segregation System. All rights reserved.</p> 
+        </footer> 
+        <script>
+        function openCamera() {
+            fetch("/start")
+            .then(response => response.text())
+            .then(data => alert(data));
+              // Replace with your IP Webcam stream URL
+        };
+        </script>
+    </body> 
+</html> 
+ 
