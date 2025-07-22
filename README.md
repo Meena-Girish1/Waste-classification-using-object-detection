@@ -1,5 +1,5 @@
 # Waste-classification-using-object-detection
-Programming lang:Python
+Programming lang:Python  
 Front-end:Html,css,javascript
 Back-end:Flask,Yolov8,Opencv
 Data preparation:Roboflow for labelling
